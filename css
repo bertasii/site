@@ -28,3 +28,21 @@
   height: 50px;
   position: absolute;
   bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation label {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#slide1:checked ~ .slides .slide:nth-child(1),
+#slide2:checked ~ .slides .slide:nth-child(2),
+#slide3:checked ~ .slides .slide:nth-child(3) {
+  display: block;
+}
