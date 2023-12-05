@@ -20,4 +20,44 @@
 }
 .donuts{
     font-size:20px;
-    position: absolute; top; 20px;
+    position: absolute; top; 20px; left: 5px;
+    width: 98%;
+    height: 170px;
+    border-radius: 20px;
+    padding: 2px;
+    background-color: □#ffbfcd;
+}
+.radius-donut{
+    border-radius: 50%;
+    width: 10%:
+    height: 60%;
+    position: absolute; bottom: 5px;
+}
+.best-donuts{
+    position: absolute; top: 25%;
+    height: auto;
+}
+.paragraph-lorem{
+    position: absolute; top: 32%;
+    font-size: 18px;
+    margin: 6px;
+}
+.options{
+    position: absolute; top: 45%;
+}
+.options-donuts{
+    position: absolute; top: 52%;
+}
+ul{
+    background: □#ffbfcd;
+    border-radius: 15%;
+    text-align: center;
+    margin-left: 50px;
+    list-style: none;
+    padding: 2px;
+}
+.op-donuts{
+    heigth: 100px;
+    width: 125px;
+    border-radius: 20%;
+}
