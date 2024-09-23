@@ -1,54 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport"content="width=device-width, initial-scale1.0">
-    <link rel="shortcut icon" hret="ícone.ico" type-"image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <title> Donut House </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomes Aleatórios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        #resultado {
+            font-size: 24px;
+            margin: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-     <div class="donuts-background">
-     <img class="radius-donut" src=imgs/radius-donut.jpeg" alt=°°>
-         
- <div class="donuts">
-     <h1>Donuts</h1>
-     <img class="radius-donut" src=imgs/radius-donut.jpeg" alt=°°>
- </div>
-  
-  <div class="donuts best-donuts">
-      <h2>Os melhores donuts</h2>
-  </div>
+    <h1>Gerador de Nomes Aleatórios</h1>
+    <div id="resultado">Clique no botão para gerar um nome!</div>
+    <button id="gerarNome">Gerar Nome</button>
 
-   <p class="paragraph-lorem">Lorem ispus dolor sit amet consectetur adipisicing elit.Eos quaeret laboriosam alias obcarcati fugit? Eventet delectus alias repellat? 
-        wisi temporibus quia fugiat vitae recusandae sunt consequatur qui distinctio, quas ducimus, toren ipsum dolor sit amet consectetur adipisicing elit. 
-        Earum similique ipsam maxime harus antai elus reprehenderit voluptates aperian eventot laboriosan? Nobis aliquid animi qui vero asperiores non ipsam eos cum?</p>
+    <script>
+        const nomes = ["Ana", "Fernanda", "Maria Eduarda", "Marcelo", "Amanda", "Gustavo", "Gabriel"];
 
-     <div class="donuts best-donuts options">
-          <h2>OPÇÕES</h2>
-     </div>
+        function aleatorio(lista) {
+            const posicao = Math.floor(Math.random() * lista.length);
+            return lista[posicao];
+        }
 
-     <div class="options-donut">
-
-        <ul>
-            <li class="option-item">
-            <h3> Opção 1</h3>
-          <img class="op-donuts" src=imgs/radius-donut.jpeg" alt=°°>
-            </li>
-
-            <li class="option-item">
-             <h3> Opção 2 </h3>
-           <img class="op-donuts" src=imgs/radius-donut.jpeg" alt=°°>
-            </li>
-
-            <li class="option-item">
-             <h3> Opção 3 </h3>
-           <img class="op-donuts" src=imgs/radius-donut.jpeg" alt=°°>
-            </li>
-        </ul>
-     </div>
-    </div>
-</body>  
+        document.getElementById('gerarNome').addEventListener('click', () => {
+            const nomeAleatorio = aleatorio(nomes);
+            document.getElementById('resultado').textContent = `Nome Aleatório: ${nomeAleatorio}`;
+        });
+    </script>
+</body>
 </html>
-
-   
