@@ -3,45 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nomes Aleatórios</title>
+    <title>Rosa de Hiroshima</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #f4f4f4;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
         }
-        #resultado {
-            font-size: 24px;
-            margin: 20px;
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
         }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
+        h1 {
+            text-align: center;
+            color: #B22222;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        .author {
+            text-align: right;
+            font-style: italic;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>Gerador de Nomes Aleatórios</h1>
-    <div id="resultado">Clique no botão para gerar um nome!</div>
-    <button id="gerarNome">Gerar Nome</button>
-
-    <script>
-        const nomes = ["Ana", "Fernanda", "Maria Eduarda", "Marcelo", "Amanda", "Gustavo", "Gabriel"];
-
-        function aleatorio(lista) {
-            const posicao = Math.floor(Math.random() * lista.length);
-            return lista[posicao];
-        }
-
-        document.getElementById('gerarNome').addEventListener('click', () => {
-            const nomeAleatorio = aleatorio(nomes);
-            document.getElementById('resultado').textContent = `Nome Aleatório: ${nomeAleatorio}`;
-        });
-    </script>
+    <div class="container">
+        <h1>Rosa de Hiroshima</h1>
+        <p>
+            Pensem nas crianças<br>
+            Mudas telepáticas<br>
+            Pensem nas meninas<br>
+            Cegas inexatas<br>
+            Pensem nas mulheres<br>
+            Rotas alteradas<br>
+            Pensem nas feridas<br>
+            Como rosas cálidas<br>
+            Mas oh não se esqueçam<br>
+            Da rosa da rosa<br>
+            Da rosa de Hiroshima<br>
+            A rosa hereditária<br>
+            A rosa radioativa<br>
+            Estúpida e inválida<br>
+            A rosa com cirrose<br>
+            A anti-rosa atômica<br>
+            Sem cor sem perfume<br>
+            Sem rosa, sem nada.
+        </p>
+        <p class="author">— Vinícius de Moraes</p>
+    </div>
 </body>
 </html>
